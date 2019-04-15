@@ -1,0 +1,41 @@
+{
+  "name": "tsl-lu",
+  "version": "0.0.1",
+  "description": "A CLI Tool to get the docs for a specific TSLint rule",
+  "main": "./dist/index.js",
+  "bin": "./dist/cli.js",
+  "files": [
+    "dist"
+  ],
+  "author": "James Arnold",
+  "license": "MIT",
+  "scripts": {
+    "prebuild": "yarn lint",
+    "build": "rm -rf dist && tsc",
+    "dev": "tsc --watch",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "eslint src/**/*.ts",
+    "lint:fix": "eslint src/**/*.ts --fix"
+  },
+  "devDependencies": {
+    "@types/cheerio": "^0.22.11",
+    "@types/node": "^11.13.4",
+    "@types/request-promise": "^4.1.42",
+    "@typescript-eslint/eslint-plugin": "^1.6.0",
+    "@typescript-eslint/parser": "^1.6.0",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "jest": "^24.7.1",
+    "prettier": "^1.17.0",
+    "typescript": "^3.4.3"
+  },
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "cheerio": "^1.0.0-rc.3",
+    "puppeteer": "^1.14.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4"
+  }
+}
