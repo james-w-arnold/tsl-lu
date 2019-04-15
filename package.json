@@ -9,6 +9,10 @@
   ],
   "author": "James Arnold",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/james-w-arnold/tsl-lu.git"
+  },
   "scripts": {
     "prebuild": "yarn lint",
     "build": "rm -rf dist && tsc",
@@ -34,7 +38,6 @@
   "dependencies": {
     "chalk": "^2.4.2",
     "cheerio": "^1.0.0-rc.3",
-    "puppeteer": "^1.14.0",
     "request": "^2.88.0",
     "request-promise": "^4.2.4"
   }

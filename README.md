@@ -1,5 +1,7 @@
 # tsl-lu
 
+![Travis (.com)](https://travis-ci.org/james-w-arnold/tsl-lu.svg?branch=master)
+
 A Simple CLI Tool to provide look up for TSLint rules on the TSLint documentation.
 
 ## Usage
